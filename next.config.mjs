@@ -9,12 +9,12 @@ const nextConfig = {
         // Headers
         headers: [
           // Allow for specific domains to have access or * for all
-          {
-            key: "Access-Control-Allow-Origin",
-            value: "*",
-            // DOES NOT WORK
-            // value: process.env.ALLOWED_ORIGIN,
-          },
+          // {
+          //   key: "Access-Control-Allow-Origin",
+          //   value: "*",
+          //   // DOES NOT WORK
+          //   // value: process.env.ALLOWED_ORIGIN,
+          // },
           // Allows for specific methods accepted
           {
             key: "Access-Control-Allow-Methods",
