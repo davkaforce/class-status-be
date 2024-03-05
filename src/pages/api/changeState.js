@@ -3,7 +3,7 @@ import fs from "fs";
 import { stderr } from "process";
 
 const handler = (req, res) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
+  // res.setHeader("Access-Control-Allow-Origin", "*");
   // console.log("req", req.body);
   // try {
   //   console.log(req.body);
