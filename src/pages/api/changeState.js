@@ -5,7 +5,7 @@ import { stderr } from "process";
 const handler = (req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   // console.log("req", req.body);
-  // try {
+  try {
   //   console.log(req.body);
   const studentId = req.body.id;
   const newState = req.body.state;
@@ -28,9 +28,9 @@ const handler = (req, res) => {
     `export const students =${JSON.stringify(students)}`
   );
   //   res.status(200).json({ message: "Success" });
-  // } catch (error) {
-  //   res.status(500).json({ message: error.message });
-  // }
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
   res.status(200).json({ users: students });
 };
 
